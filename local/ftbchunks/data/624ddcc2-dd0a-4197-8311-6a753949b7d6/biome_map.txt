@@ -1,0 +1,15 @@
+#556 minecraft:beach
+#646 biomesoplenty:dune_beach
+#674 minecraft:flower_forest
+#010 minecraft:forest
+#35F biomesoplenty:jacaranda_glade
+#4B0 minecraft:jungle
+#79A minecraft:lukewarm_ocean
+#4F1 minecraft:ocean
+#552 biomesoplenty:old_growth_woodland
+#5A5 biomesoplenty:orchard
+#3DC minecraft:plains
+#68B biomesoplenty:rainforest
+#5FF minecraft:river
+#67B minecraft:savanna
+#3AF minecraft:sparse_jungle

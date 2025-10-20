@@ -1,0 +1,16 @@
+crash-reports/
+journeymap/data/
+journeymap/icon/
+journeymap/server/
+journeymap/journeymap.log
+logs/
+mods/
+saves/
+screenshots/
+shaderpacks/
+resourcepacks/
+server-resource-packs/
+.cache/
+.vscode/
+usernamecache.json
+usercache.json

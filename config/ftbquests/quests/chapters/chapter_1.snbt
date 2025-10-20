@@ -1,0 +1,20 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_1"
+	group: ""
+	id: "670F7400B2872880"
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		id: "1B15D6875AE56899"
+		tasks: [{
+			id: "6F735C6D9849F1EC"
+			title: "Welcome"
+			type: "checkmark"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "Chapter 0"
+}

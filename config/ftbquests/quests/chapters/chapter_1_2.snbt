@@ -1,0 +1,558 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_1_2"
+	group: ""
+	icon: "tconstruct:crafting_station"
+	id: "2739235012882D95"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["&8&oliterally any tree&r&r"]
+			icon: "minecraft:oak_log"
+			id: "3C67181CF6843619"
+			subtitle: "Humble Beginnings"
+			tasks: [
+				{
+					icon: "minecraft:oak_log"
+					id: "0F6F3763837327F9"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:logs"
+						}
+					}
+					title: "Pick Up Wood"
+					type: "item"
+				}
+				{
+					count: 4L
+					icon: "minecraft:oak_planks"
+					id: "7FB0858F397D8553"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:planks"
+						}
+					}
+					title: "Craft 4 Planks"
+					type: "item"
+				}
+			]
+			title: "Punch Trees"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3C67181CF6843619"]
+			icon: "tconstruct:crafting_station"
+			id: "54C22E0307409DFC"
+			subtitle: "Turn your Crafting Table into a Crafting Station!"
+			tasks: [
+				{
+					id: "501D2C9FD742C3B6"
+					item: "minecraft:crafting_table"
+					type: "item"
+				}
+				{
+					id: "17E91C328410DFCA"
+					item: "tconstruct:crafting_station"
+					type: "item"
+				}
+			]
+			title: "Superior Station"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1A0C77C539513E35"
+				"2E01A31BBFF6F01B"
+			]
+			icon: "tconstruct:grout"
+			id: "3B4B4F82214E47C9"
+			subtitle: "You're going to want a lot of this"
+			tasks: [
+				{
+					count: 64L
+					id: "7CF446B01B1B89B4"
+					item: "tconstruct:grout"
+					type: "item"
+				}
+				{
+					id: "4BCB42BF934196D3"
+					item: "minecraft:clay_ball"
+					type: "item"
+				}
+				{
+					id: "1982E84D5B07D525"
+					item: "minecraft:sand"
+					type: "item"
+				}
+				{
+					id: "20995F1A3E030DF6"
+					item: "minecraft:gravel"
+					type: "item"
+				}
+			]
+			title: "I am Grout"
+			x: 6.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["54C22E0307409DFC"]
+			icon: "tconstruct:part_builder"
+			id: "72317C2AB879A0A5"
+			subtitle: "A couple extra steps"
+			tasks: [
+				{
+					id: "6BDEF42CA10E9ABF"
+					item: "tconstruct:part_builder"
+					type: "item"
+				}
+				{
+					id: "37ECC4F8EA561D26"
+					item: "tconstruct:tinker_station"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "028043EA274EEE42"
+					item: "tconstruct:pattern"
+					type: "item"
+				}
+			]
+			title: "Build your own tools!"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["72317C2AB879A0A5"]
+			description: ["If you put your tool and a new tool part into the Tinker Station it will delete the corresponding part and replace it with the new one"]
+			id: "1A0C77C539513E35"
+			subtitle: "Can be used from start to finish"
+			tasks: [
+				{
+					icon: {
+						Count: 1
+						id: "tconstruct:pickaxe"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+							tic_materials: [
+								"tconstruct:wood"
+								"tconstruct:wood"
+								"tconstruct:wood"
+							]
+							tic_modifiers: [
+								{
+									level: 3
+									name: "tconstruct:cultivated"
+								}
+								{
+									level: 1
+									name: "tconstruct:pierce"
+								}
+							]
+							tic_persistent: { }
+							tic_stats: {
+								"tconstruct:attack_damage": 1.0f
+								"tconstruct:attack_speed": 1.2f
+								"tconstruct:durability": 60.0f
+								"tconstruct:mining_speed": 2.0f
+							}
+							tic_volatile_data: {
+								abilities: 1
+								upgrades: 3
+							}
+						}
+					}
+					id: "40074A1077D42F71"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:pickaxes"
+						}
+					}
+					title: "Pickaxe"
+					type: "item"
+				}
+				{
+					icon: {
+						Count: 1
+						id: "tconstruct:hand_axe"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+							tic_materials: [
+								"tconstruct:wood"
+								"tconstruct:wood"
+								"tconstruct:wood"
+							]
+							tic_modifiers: [
+								{
+									level: 3
+									name: "tconstruct:cultivated"
+								}
+								{
+									level: 1
+									name: "tconstruct:stripping"
+								}
+							]
+							tic_persistent: { }
+							tic_stats: {
+								"tconstruct:attack_damage": 6.0f
+								"tconstruct:attack_speed": 0.9f
+								"tconstruct:durability": 60.0f
+								"tconstruct:mining_speed": 2.0f
+							}
+							tic_volatile_data: {
+								abilities: 1
+								upgrades: 3
+							}
+						}
+					}
+					id: "3FF6BB3CC23BBFC1"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:axes"
+						}
+					}
+					title: "Axe"
+					type: "item"
+				}
+				{
+					icon: {
+						Count: 1
+						id: "tconstruct:mattock"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+							tic_materials: [
+								"tconstruct:wood"
+								"tconstruct:wood"
+								"tconstruct:wood"
+							]
+							tic_modifiers: [
+								{
+									level: 3
+									name: "tconstruct:cultivated"
+								}
+								{
+									level: 1
+									name: "tconstruct:tilling"
+								}
+							]
+							tic_multipliers: {
+								"tconstruct:attack_damage": 1.1f
+								"tconstruct:durability": 1.25f
+								"tconstruct:mining_speed": 1.1f
+							}
+							tic_persistent: { }
+							tic_stats: {
+								"tconstruct:attack_damage": 1.6500001f
+								"tconstruct:attack_speed": 0.9f
+								"tconstruct:durability": 75.0f
+								"tconstruct:mining_speed": 2.2f
+							}
+							tic_volatile_data: {
+								abilities: 1
+								upgrades: 3
+							}
+						}
+					}
+					id: "2B31996FAC43B45B"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:shovels"
+						}
+					}
+					title: "Mattock"
+					type: "item"
+				}
+			]
+			title: "Your forever tools"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3B4B4F82214E47C9"]
+			icon: "tconstruct:seared_brick"
+			id: "4E306ABEEA901C8C"
+			subtitle: "More Bricks"
+			tasks: [{
+				id: "130B9156582376AB"
+				item: "tconstruct:seared_brick"
+				type: "item"
+			}]
+			title: "Bricks"
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4E306ABEEA901C8C"]
+			hide_details_until_startable: false
+			icon: "tconstruct:smeltery_controller"
+			id: "43150021089BFEF8"
+			shape: "gear"
+			size: 1.5d
+			subtitle: "Early game ore doubling!"
+			tasks: [
+				{
+					id: "5BDA65747FE2CEC7"
+					item: "tconstruct:smeltery_controller"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "1CCCFD3F3B0594C5"
+					item: "tconstruct:seared_bricks"
+					type: "item"
+				}
+				{
+					id: "29A8881C047DE4BD"
+					item: "tconstruct:seared_fuel_tank"
+					type: "item"
+				}
+				{
+					id: "5F91506B9EB75DF1"
+					item: "tconstruct:seared_basin"
+					type: "item"
+				}
+				{
+					id: "7577B648299B6292"
+					item: "tconstruct:seared_table"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "1128C1E888650C23"
+					item: { Count: 2, id: "tconstruct:seared_drain" }
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "42026C1468CD8C96"
+					item: { Count: 2, id: "tconstruct:seared_faucet" }
+					type: "item"
+				}
+			]
+			title: "Smeltery"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["43150021089BFEF8"]
+			id: "1C07B5D3563F50B7"
+			subtitle: "Bronze will be the easiest"
+			tasks: [{
+				count: 3L
+				id: "076EBC2939D30260"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "tconstruct:anvil_metal"
+					}
+				}
+				type: "item"
+			}]
+			title: "Alloy for Anvil"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4E306ABEEA901C8C"
+				"1C07B5D3563F50B7"
+			]
+			id: "1E4D206EC6CCD591"
+			shape: "gear"
+			size: 1.5d
+			subtitle: "More tools yay!"
+			tasks: [{
+				id: "725F52615E7F5DE9"
+				item: "tconstruct:tinkers_anvil"
+				type: "item"
+			}]
+			title: "Anvil but cooler"
+			x: 10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1E4D206EC6CCD591"]
+			description: ["3x3 mining, and the ability to flatten ingots into plates"]
+			id: "3BDC9B314B8D1A5A"
+			shape: "gear"
+			size: 1.5d
+			subtitle: "Stop! Hammer time!"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "tconstruct:sledge_hammer"
+					tag: {
+						Damage: 0
+						tic_broken: 0b
+						tic_materials: [
+							"tconstruct:iron"
+							"tconstruct:wood"
+							"tconstruct:iron"
+							"tconstruct:iron"
+						]
+						tic_modifiers: [
+							{
+								level: 3
+								name: "tconstruct:magnetic"
+							}
+							{
+								level: 1
+								name: "tconstruct:cultivated"
+							}
+							{
+								level: 2
+								name: "tconstruct:smite"
+							}
+						]
+						tic_multipliers: {
+							"tconstruct:attack_damage": 1.35f
+							"tconstruct:durability": 4.0f
+							"tconstruct:mining_speed": 0.4f
+						}
+						tic_persistent: { }
+						tic_stats: {
+							"tconstruct:attack_damage": 6.75f
+							"tconstruct:attack_speed": 0.75f
+							"tconstruct:durability": 1000.0f
+							"tconstruct:harvest_tier": "minecraft:iron"
+							"tconstruct:mining_speed": 2.4f
+						}
+						tic_volatile_data: {
+							abilities: 1
+							upgrades: 2
+						}
+					}
+				}
+				id: "775029CF73FE0DB3"
+				item: {
+					Count: 1
+					id: "itemfilters:id_regex"
+					tag: {
+						value: "tconstruct:sledge_hammer"
+					}
+				}
+				title: "Hammer"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1A0C77C539513E35"]
+			icon: {
+				Count: 1
+				id: "farmersdelight:flint_knife"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "32A824CF64089BB1"
+			subtitle: "Cutting edge"
+			tasks: [
+				{
+					icon: {
+						Count: 1
+						id: "farmersdelight:flint_knife"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "79251897342DCC19"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "farmersdelight:tools/knives"
+						}
+					}
+					title: "Cutting edge"
+					type: "item"
+				}
+				{
+					id: "74471BCCD00A6699"
+					item: "farmersdelight:cutting_board"
+					type: "item"
+				}
+			]
+			title: "Cooking knives"
+			x: 6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["32A824CF64089BB1"]
+			id: "5814AB06DD6CDC08"
+			tasks: [
+				{
+					id: "4819B1526B9E9500"
+					item: "farmersdelight:stove"
+					type: "item"
+				}
+				{
+					id: "03A84C9CA2F755E7"
+					item: "farmersdelight:cooking_pot"
+					type: "item"
+				}
+				{
+					id: "1563C2F5F3228DF0"
+					item: {
+						Count: 1
+						id: "farmersdelight:skillet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["54C22E0307409DFC"]
+			id: "2E01A31BBFF6F01B"
+			optional: true
+			tasks: [{
+				id: "4DE65345F50E1213"
+				item: "minecraft:furnace"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5814AB06DD6CDC08"]
+			id: "79694E4C27956942"
+			tasks: [{
+				id: "797E64A59FDAC205"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "farmersdelight:meals"
+					}
+				}
+				type: "item"
+			}]
+			x: 7.0d
+			y: -3.0d
+		}
+	]
+	title: "Chapter 1"
+}

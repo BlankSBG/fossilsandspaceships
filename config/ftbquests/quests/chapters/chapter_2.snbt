@@ -1,0 +1,184 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_2"
+	group: ""
+	icon: {
+		Count: 1
+		id: "thermal:wrench"
+		tag: { }
+	}
+	id: "2A99888C41224EC5"
+	order_index: 2
+	quest_links: [{
+		id: "13AFECB443AEA78C"
+		linked_quest: "3BDC9B314B8D1A5A"
+		shape: "gear"
+		size: 1.5d
+		x: 3.0d
+		y: 1.5d
+	}]
+	quests: [
+		{
+			dependencies: ["3BDC9B314B8D1A5A"]
+			id: "3DEA08CEE84062DD"
+			subtitle: "Use your new hammer"
+			tasks: [{
+				id: "79104F4FA5F07D93"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:plates"
+					}
+				}
+				type: "item"
+			}]
+			title: "Craft a plate!"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3DEA08CEE84062DD"]
+			id: "6336BF678BCF8A7B"
+			tasks: [{
+				id: "7B16FFF311E14304"
+				item: "thermal:redstone_servo"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3DEA08CEE84062DD"]
+			id: "7BC4A7D5D06D7E0B"
+			tasks: [{
+				id: "7C00D51725C066DD"
+				item: "thermal:rf_coil"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6336BF678BCF8A7B"
+				"695B00D1B6DC4A5B"
+			]
+			id: "0863845E9DC10100"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "2EE3C77CCAB88980"
+				item: "thermal:machine_press"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -3.75d
+		}
+		{
+			dependencies: ["0863845E9DC10100"]
+			id: "5D2841E2E45B8FE8"
+			tasks: [{
+				id: "6AFB571C1282F24A"
+				item: "thermal:press_gear_die"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"5D2841E2E45B8FE8"
+				"0863845E9DC10100"
+			]
+			id: "18768093B3879070"
+			shape: "gear"
+			size: 1.0d
+			subtitle: "Use your new machine"
+			tasks: [{
+				id: "3ADBE29336C7BB6F"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:gears"
+					}
+				}
+				type: "item"
+			}]
+			title: "Make a gear!"
+			x: 9.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7BC4A7D5D06D7E0B"]
+			id: "695B00D1B6DC4A5B"
+			tasks: [{
+				id: "70B0C419654D0F9F"
+				item: {
+					Count: 1
+					id: "thermal:flux_capacitor"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"0863845E9DC10100"
+				"18768093B3879070"
+			]
+			id: "24DEFD96C86DDF3D"
+			tasks: [{
+				id: "4A53359675D04BE8"
+				item: "thermal:machine_frame"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"695B00D1B6DC4A5B"
+				"24DEFD96C86DDF3D"
+			]
+			id: "1DB88913A371AF90"
+			tasks: [{
+				id: "68A20A87026DF970"
+				item: "thermal:machine_pulverizer"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"695B00D1B6DC4A5B"
+				"24DEFD96C86DDF3D"
+			]
+			id: "510F9EE58A62FA6E"
+			tasks: [{
+				id: "33D05FA537732EAC"
+				item: "thermal:machine_furnace"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["7BC4A7D5D06D7E0B"]
+			id: "5FE7B6490B7AA601"
+			tasks: [{
+				id: "20A45B1E3EFCAC68"
+				item: "thermal:dynamo_stirling"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.0d
+		}
+	]
+	title: "Chapter 2"
+}
