@@ -35,7 +35,7 @@
 				type: "item"
 			}]
 			title: "Craft a plate!"
-			x: 2.0d
+			x: 3.0d
 			y: 0.0d
 		}
 		{
@@ -57,7 +57,7 @@
 				item: "thermal:rf_coil"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 6.0d
 			y: 0.0d
 		}
 		{
@@ -123,8 +123,8 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
-			y: -1.0d
+			x: 6.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -169,15 +169,21 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["7BC4A7D5D06D7E0B"]
-			id: "5FE7B6490B7AA601"
-			tasks: [{
-				id: "20A45B1E3EFCAC68"
-				item: "thermal:dynamo_stirling"
-				type: "item"
-			}]
+			id: "2B26FB5034369118"
+			tasks: [
+				{
+					id: "077E7D4B74E206F8"
+					item: "immersiveengineering:connector_lv"
+					type: "item"
+				}
+				{
+					id: "2A7082399BCBDE29"
+					item: "immersiveengineering:connector_lv_relay"
+					type: "item"
+				}
+			]
 			x: 3.0d
-			y: -1.0d
+			y: -1.5d
 		}
 	]
 	title: "Chapter 2"

@@ -492,7 +492,7 @@
 				}
 			]
 			title: "Cooking knives"
-			x: 6.5d
+			x: 5.5d
 			y: -1.5d
 		}
 		{
@@ -521,8 +521,8 @@
 					type: "item"
 				}
 			]
-			x: 8.0d
-			y: -2.0d
+			x: 4.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["54C22E0307409DFC"]
@@ -550,7 +550,123 @@
 				}
 				type: "item"
 			}]
+			x: 3.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["1A0C77C539513E35"]
+			id: "0A4BA220BB71FB4A"
+			tasks: [{
+				icon: "immersiveengineering:cokebrick"
+				id: "5BAD18A611AD1E79"
+				observe_type: 0
+				timer: 0L
+				title: "Coke Oven"
+				to_observe: "immersiveengineering:coke_oven"
+				type: "observation"
+			}]
 			x: 7.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0A4BA220BB71FB4A"]
+			id: "2D9FD6FA051A9DD7"
+			tasks: [{
+				id: "217FAB5D4A33FDE4"
+				item: "immersiveengineering:creosote_bucket"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["78E8C655C063B9E7"]
+			id: "7E4919F5B8E5B239"
+			tasks: [{
+				id: "4EC366341204045B"
+				item: "immersiveengineering:seed"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["32A824CF64089BB1"]
+			id: "78E8C655C063B9E7"
+			optional: true
+			tasks: [{
+				icon: "farmersdelight:wild_onions"
+				id: "2D24BBDB29106BA1"
+				observe_type: 1
+				timer: 0L
+				title: "Observe Wild Crops"
+				to_observe: "farmersdelight:wild_crops"
+				type: "observation"
+			}]
+			x: 6.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7E4919F5B8E5B239"]
+			id: "0FFE21BEF7D14DAD"
+			tasks: [{
+				id: "226F459495E97D54"
+				item: "immersiveengineering:hemp_fiber"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"19AE98142E993DE6"
+				"6752C1C1DF92A7FE"
+				"3BDC9B314B8D1A5A"
+			]
+			id: "71AC3AAED9DA7E16"
+			tasks: [{
+				id: "62993A2D03FA444C"
+				item: "immersiveengineering:windmill"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2D9FD6FA051A9DD7"]
+			id: "19AE98142E993DE6"
+			tasks: [
+				{
+					id: "4F13EF258CFCB3BF"
+					item: "immersiveengineering:treated_wood_horizontal"
+					type: "item"
+				}
+				{
+					id: "12E950D592FC0DF6"
+					item: "immersiveengineering:stick_treated"
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0FFE21BEF7D14DAD"]
+			id: "6752C1C1DF92A7FE"
+			tasks: [
+				{
+					id: "1FF4DD58A71E7D4B"
+					item: "immersiveengineering:hemp_fabric"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "578F260267F6AE81"
+					item: "immersiveengineering:windmill_sail"
+					type: "item"
+				}
+			]
+			x: 10.0d
 			y: -3.0d
 		}
 	]
