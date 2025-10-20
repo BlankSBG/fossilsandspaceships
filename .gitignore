@@ -14,3 +14,9 @@ server-resource-packs/
 .vscode/
 usernamecache.json
 usercache.json
+.mixin.out/
+liboc2rnet.so
+patchouli_data.json
+rhino.local.properties
+local/
+modernfix/
