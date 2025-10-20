@@ -51,6 +51,16 @@
 			strophar = true
 			glacian = true
 
+		[types.wood_type.twilightforest]
+			twilight_oak = true
+			canopy = true
+			mangrove = true
+			dark = true
+			time = true
+			transformation = true
+			mining = true
+			sorting = true
+
 	[types.cake]
 
 		[types.cake.thermal]
@@ -60,6 +70,7 @@
 		[types.cake.compatdelight]
 			bamboo_cake = true
 			mana_cake = true
+			suns_cake = true
 
 	[types.leaves_type]
 
@@ -179,6 +190,22 @@
 			orange_spruce = true
 			red_spruce = true
 			white_flower_spruce = true
+
+		[types.leaves_type.twilightforest]
+			thorn = true
+			beanstalk = true
+			twilight_oak = true
+			canopy = true
+			mangrove = true
+			dark = true
+			rainbow_oak = true
+			time = true
+			transformation = true
+			mining = true
+			sorting = true
+
+		[types.leaves_type.twilightdelight]
+			ironwood = true
 
 #Disables specific entries
 [entries]
@@ -510,6 +537,12 @@
 			soul_tiki_torch = true
 			ceiling_fan_light = true
 			tiki_torch = true
+
+		[entries.wood_type.twilightforest]
+			hollow_log_climbable = true
+			banister = true
+			hollow_log_horizontal = true
+			hollow_log_vertical = true
 
 	[entries.leaves_type]
 
