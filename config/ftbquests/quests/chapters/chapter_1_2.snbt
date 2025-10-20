@@ -6,7 +6,12 @@
 	icon: "tconstruct:crafting_station"
 	id: "2739235012882D95"
 	order_index: 1
-	quest_links: [ ]
+	quest_links: [{
+		id: "1A184F508FF1E45F"
+		linked_quest: "3DEA08CEE84062DD"
+		x: 13.022959183673471d
+		y: -1.1352040816326507d
+	}]
 	quests: [
 		{
 			description: ["&8&oliterally any tree&r&r"]
@@ -621,16 +626,18 @@
 			dependencies: [
 				"19AE98142E993DE6"
 				"6752C1C1DF92A7FE"
-				"3BDC9B314B8D1A5A"
+				"3DEA08CEE84062DD"
 			]
 			id: "71AC3AAED9DA7E16"
+			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				id: "62993A2D03FA444C"
 				item: "immersiveengineering:windmill"
 				type: "item"
 			}]
 			x: 12.0d
-			y: -2.5d
+			y: -2.25d
 		}
 		{
 			dependencies: ["2D9FD6FA051A9DD7"]

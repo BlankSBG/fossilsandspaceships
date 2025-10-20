@@ -10,14 +10,22 @@
 	}
 	id: "2A99888C41224EC5"
 	order_index: 2
-	quest_links: [{
-		id: "13AFECB443AEA78C"
-		linked_quest: "3BDC9B314B8D1A5A"
-		shape: "gear"
-		size: 1.5d
-		x: 3.0d
-		y: 1.5d
-	}]
+	quest_links: [
+		{
+			id: "13AFECB443AEA78C"
+			linked_quest: "3BDC9B314B8D1A5A"
+			shape: "gear"
+			size: 1.5d
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			id: "50630B1A792CBF29"
+			linked_quest: "71AC3AAED9DA7E16"
+			x: 4.0d
+			y: -1.0d
+		}
+	]
 	quests: [
 		{
 			dependencies: ["3BDC9B314B8D1A5A"]
@@ -47,7 +55,7 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: -1.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["3DEA08CEE84062DD"]
@@ -57,13 +65,13 @@
 				item: "thermal:rf_coil"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 5.0d
 			y: 0.0d
 		}
 		{
 			dependencies: [
 				"6336BF678BCF8A7B"
-				"695B00D1B6DC4A5B"
+				"7BA9C828A701A6A8"
 			]
 			id: "0863845E9DC10100"
 			shape: "gear"
@@ -73,19 +81,19 @@
 				item: "thermal:machine_press"
 				type: "item"
 			}]
-			x: 7.5d
-			y: -3.75d
+			x: 1.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["0863845E9DC10100"]
 			id: "5D2841E2E45B8FE8"
 			tasks: [{
 				id: "6AFB571C1282F24A"
-				item: "thermal:press_gear_die"
+				item: "immersiveengineering:mold_gear"
 				type: "item"
 			}]
-			x: 8.0d
-			y: -2.0d
+			x: 1.0d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -108,8 +116,8 @@
 				type: "item"
 			}]
 			title: "Make a gear!"
-			x: 9.0d
-			y: -2.0d
+			x: 2.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["7BC4A7D5D06D7E0B"]
@@ -123,27 +131,24 @@
 				}
 				type: "item"
 			}]
-			x: 6.0d
-			y: -1.5d
+			x: 5.0d
+			y: -2.0d
 		}
 		{
-			dependencies: [
-				"0863845E9DC10100"
-				"18768093B3879070"
-			]
+			dependencies: ["18768093B3879070"]
 			id: "24DEFD96C86DDF3D"
 			tasks: [{
 				id: "4A53359675D04BE8"
 				item: "thermal:machine_frame"
 				type: "item"
 			}]
-			x: 8.5d
+			x: 3.0d
 			y: -4.0d
 		}
 		{
 			dependencies: [
-				"695B00D1B6DC4A5B"
 				"24DEFD96C86DDF3D"
+				"695B00D1B6DC4A5B"
 			]
 			id: "1DB88913A371AF90"
 			tasks: [{
@@ -151,13 +156,13 @@
 				item: "thermal:machine_pulverizer"
 				type: "item"
 			}]
-			x: 10.0d
-			y: -2.5d
+			x: 5.0d
+			y: -3.5d
 		}
 		{
 			dependencies: [
-				"695B00D1B6DC4A5B"
 				"24DEFD96C86DDF3D"
+				"695B00D1B6DC4A5B"
 			]
 			id: "510F9EE58A62FA6E"
 			tasks: [{
@@ -165,10 +170,11 @@
 				item: "thermal:machine_furnace"
 				type: "item"
 			}]
-			x: 9.5d
-			y: -4.0d
+			x: 4.0d
+			y: -3.0d
 		}
 		{
+			dependencies: ["3DEA08CEE84062DD"]
 			id: "2B26FB5034369118"
 			tasks: [
 				{
@@ -182,8 +188,88 @@
 					type: "item"
 				}
 			]
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"695B00D1B6DC4A5B"
+				"3DEA08CEE84062DD"
+				"2B26FB5034369118"
+				"71AC3AAED9DA7E16"
+			]
+			id: "7BA9C828A701A6A8"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "6085104B8D1E6D36"
+				item: "immersiveengineering:capacitor_lv"
+				type: "item"
+			}]
 			x: 3.0d
-			y: -1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2B26FB5034369118"]
+			hide_until_deps_complete: true
+			id: "7BAD72FEF97FDA8D"
+			tasks: [
+				{
+					id: "49D0844ED4C54C7D"
+					item: {
+						Count: 1
+						id: "immersiveengineering:wirecutter"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5BA23075237CB63D"
+					item: "immersiveengineering:wirecoil_copper"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1DB88913A371AF90"]
+			id: "51E587B23D95EA9D"
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					id: "62480189FF190704"
+					item: "minecraft:raw_iron"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "06C12886547DDD3E"
+					item: { Count: 2, id: "thermal:iron_dust" }
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["0863845E9DC10100"]
+			hide_until_deps_complete: true
+			id: "48661C838D0892B2"
+			tasks: [{
+				id: "26C2E8C6AAB4CB86"
+				item: {
+					Count: 1
+					id: "thermal:wrench"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: -3.0d
 		}
 	]
 	title: "Chapter 2"

@@ -20,5 +20,18 @@ ServerEvents.recipes(event => {
         }
     );
 
+    // wire cutter with plate
+    
+    event.remove({id: 'immersiveengineering:crafting/wirecutter'});
+    event.shaped('immersiveengineering:wirecutter',
+        [
+            'SI',
+            ' S'
+        ],
+        {
+            S: 'immersiveengineering:stick_treated',
+            I: 'thermal:iron_plate'
+        }
+    )
     }
 )

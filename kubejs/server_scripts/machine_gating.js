@@ -16,6 +16,23 @@ ServerEvents.recipes(event =>{
             }
         );
 
+        // LV accumulator
+        event.remove({id: 'immersiveengineering:crafting/capacitor_lv'});
+        event.shaped('immersiveengineering:capacitor_lv',
+            [
+                'WEW',
+                'LPL',
+                'WCW'
+            ],
+            {
+                W: '#forge:treated_wood',
+                E: 'thermal:electrum_plate',
+                L: 'thermal:lead_plate',
+                P: 'thermal:flux_capacitor',
+                C: 'thermal:copper_plate'
+            }
+        )
+
         // LV wire connector / relay
         event.remove({id: 'immersiveengineering:crafting/connector_lv'});
         event.remove({id: 'immersiveengineering:crafting/connector_lv_relay'});

@@ -42,6 +42,9 @@ ad_astra:calorite_ingot
 ad_astra:ostrum_ingot
 ad_astra:desh_ingot */
 
+    // remove plate recipies
+    event.remove({output: '#forge:plates'})
+
     // make plates with tinkers hammer
 
 //    event.shapeless('thermal:invar_plate', ['thermal:invar_ingot', 'tconstruct:sledge_hammer']).damageIngredient('tconstruct:sledge_hammer', 10)
@@ -66,26 +69,26 @@ ad_astra:desh_ingot */
 //    event.shapeless('ad_astra:desh_plate', ['ad_astra:desh_ingot', 'tconstruct:sledge_hammer']).damageIngredient('tconstruct:sledge_hammer', 10)
     
     // make plates with press
-     event.recipes.thermal.press('thermal:invar_plate', ['2x thermal:invar_ingot', 'immersiveengineering:mold_plate'])
-     event.recipes.thermal.press('thermal:electrum_plate', ['2x thermal:electrum_ingot', 'immersiveengineering:mold_plate'])
-     event.recipes.thermal.press('thermal:bronze_plate', ['2x thermal:bronze_ingot', 'immersiveengineering:mold_plate'])
-     event.recipes.thermal.press('thermal:nickel_plate', ['thermal:nickel_ingot', 'immersiveengineering:mold_plate'])
-     event.recipes.thermal.press('thermal:silver_plate', ['thermal:silver_ingot', 'immersiveengineering:mold_plate'])
-     event.recipes.thermal.press('thermal:lead_plate', ['thermal:lead_ingot', 'immersiveengineering:mold_plate'])
-     event.recipes.thermal.press('thermal:tin_plate', ['thermal:tin_ingot', 'immersiveengineering:mold_plate'])
-     event.recipes.thermal.press('thermal:rose_gold_plate', ['2x thermal:rose_gold_ingot', 'immersiveengineering:mold_plate'])
-     event.recipes.thermal.press('thermal:steel_plate', ['2x thermal:steel_plate', 'immersiveengineering:mold_plate'])
-     event.recipes.thermal.press('thermal:enderium_plate', ['2x thermal:enderium_ingot', 'immersiveengineering:mold_plate'])
-     event.recipes.thermal.press('thermal:lumium_plate', ['2x thermal:lumium_ingot', 'immersiveengineering:mold_plate'])
-     event.recipes.thermal.press('thermal:signalum_plate', ['2x thermal:signalum_ingot', 'immersiveengineering:mold_plate'])
-     event.recipes.thermal.press('thermal:netherite_plate', ['2x thermal:netherite_ingot', 'immersiveengineering:mold_plate'])
-     event.recipes.thermal.press('thermal:copper_plate', ['thermal:copper_ingot', 'immersiveengineering:mold_plate'])
-     event.recipes.thermal.press('thermal:gold_plate', ['thermal:gold_ingot', 'immersiveengineering:mold_plate'])
-     event.recipes.thermal.press('thermal:iron_plate', ['thermal:iron_ingot', 'immersiveengineering:mold_plate'])
-     event.recipes.thermal.press('thermal:constantan_plate', ['2x thermal:constantan_ingot', 'immersiveengineering:mold_plate'])
-     event.recipes.thermal.press('ad_astra:calorite_plate', ['2x ad_astra:calorite_ingot', 'immersiveengineering:mold_plate'])
-     event.recipes.thermal.press('ad_astra:ostrum_plate', ['2x ad_astra:ostrum_ingot', 'immersiveengineering:mold_plate'])
-     event.recipes.thermal.press('ad_astra:desh_plate', ['2x ad_astra:desh_ingot', 'immersiveengineering:mold_plate'])
+    event.recipes.thermal.press('thermal:invar_plate', ['2x thermal:invar_ingot', 'immersiveengineering:mold_plate'])
+    event.recipes.thermal.press('thermal:electrum_plate', ['2x thermal:electrum_ingot', 'immersiveengineering:mold_plate'])
+    event.recipes.thermal.press('thermal:bronze_plate', ['2x thermal:bronze_ingot', 'immersiveengineering:mold_plate'])
+    event.recipes.thermal.press('thermal:nickel_plate', ['thermal:nickel_ingot', 'immersiveengineering:mold_plate'])
+    event.recipes.thermal.press('thermal:silver_plate', ['thermal:silver_ingot', 'immersiveengineering:mold_plate'])
+    event.recipes.thermal.press('thermal:lead_plate', ['thermal:lead_ingot', 'immersiveengineering:mold_plate'])
+    event.recipes.thermal.press('thermal:tin_plate', ['thermal:tin_ingot', 'immersiveengineering:mold_plate'])
+    event.recipes.thermal.press('thermal:rose_gold_plate', ['2x thermal:rose_gold_ingot', 'immersiveengineering:mold_plate'])
+    event.recipes.thermal.press('thermal:steel_plate', ['2x thermal:steel_plate', 'immersiveengineering:mold_plate'])
+    event.recipes.thermal.press('thermal:enderium_plate', ['2x thermal:enderium_ingot', 'immersiveengineering:mold_plate'])
+    event.recipes.thermal.press('thermal:lumium_plate', ['2x thermal:lumium_ingot', 'immersiveengineering:mold_plate'])
+    event.recipes.thermal.press('thermal:signalum_plate', ['2x thermal:signalum_ingot', 'immersiveengineering:mold_plate'])
+    event.recipes.thermal.press('thermal:netherite_plate', ['2x thermal:netherite_ingot', 'immersiveengineering:mold_plate'])
+    event.recipes.thermal.press('thermal:copper_plate', ['thermal:copper_ingot', 'immersiveengineering:mold_plate'])
+    event.recipes.thermal.press('thermal:gold_plate', ['thermal:gold_ingot', 'immersiveengineering:mold_plate'])
+    event.recipes.thermal.press('thermal:iron_plate', ['thermal:iron_ingot', 'immersiveengineering:mold_plate'])
+    event.recipes.thermal.press('thermal:constantan_plate', ['2x thermal:constantan_ingot', 'immersiveengineering:mold_plate'])
+    event.recipes.thermal.press('ad_astra:calorite_plate', ['2x ad_astra:calorite_ingot', 'immersiveengineering:mold_plate'])
+    event.recipes.thermal.press('ad_astra:ostrum_plate', ['2x ad_astra:ostrum_ingot', 'immersiveengineering:mold_plate'])
+    event.recipes.thermal.press('ad_astra:desh_plate', ['2x ad_astra:desh_ingot', 'immersiveengineering:mold_plate'])
 
 
     }

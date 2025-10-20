@@ -24,8 +24,17 @@ thermal:signalum_gear
 thermal:quartz_gear
 thermal:emerald_gear */
 
-    // remove all gear recipes 
+    // remove all gears and gear recipes 
     event.remove({output: '#forge:gears'})
+    //RecipeViewerEvents.removeEntriesCompletely('item', event => {
+	//    event.remove('industrialforegoing:iron_gear')
+    //});
+    //RecipeViewerEvents.removeEntriesCompletely('item', event => {
+	//    event.remove('industrialforegoing:gold_gear')
+    //});
+    //RecipeViewerEvents.removeEntriesCompletely('item', event => {
+	//    event.remove('industrialforegoing:diamond_gear')
+    //});
 
     // add gears back only press
 
