@@ -7,7 +7,10 @@
 	order_index: 0
 	quest_links: [ ]
 	quests: [{
+		icon: "ad_astra:earth_globe"
 		id: "1B15D6875AE56899"
+		shape: "hexagon"
+		size: 2.0d
 		tasks: [{
 			id: "6F735C6D9849F1EC"
 			title: "Welcome"

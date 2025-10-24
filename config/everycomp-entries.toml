@@ -63,10 +63,6 @@
 
 	[types.cake]
 
-		[types.cake.thermal]
-			chocolate_cake = true
-			spice_cake = true
-
 		[types.cake.compatdelight]
 			bamboo_cake = true
 			mana_cake = true
