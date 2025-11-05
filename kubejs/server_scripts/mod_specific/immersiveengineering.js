@@ -11,38 +11,6 @@ ServerEvents.recipes(event => {
     event.remove({id: 'immersiveengineering:metalpress/bullet_casing'})
     event.remove({id: 'immersiveengineering:metalpress/'})
     event.remove({id: 'immersiveengineering:metalpress/'})
-
-
-    // fix aluminum
-
-        // replace alu wires with lead wire
-        event.remove({output: 'immersiveengineering:wire_aluminum'});
-        event.replaceInput(
-            {input: 'immersiveengineering:wire_aluminum'},
-            'immersiveengineering:wire_aluminum',
-            'immersiveengineering:wire_lead'
-        );
-
-        // replace alu rod with iron rod
-        event.remove({output: 'immersiveengineering:stick_aluminum'})
-        event.replaceInput(
-            {input: 'immersiveengineering:stick_aluminum'},
-            'immersiveengineering:stick_aluminum',
-            'immersiveengineering:stick_iron'
-        );
-
-        // replace alu plate with tin plate
-        event.remove({output: 'immersiveengineering:plate_aluminum'})
-        event.replaceInput(
-            {input: 'immersiveengineering:plate_aluminum'},
-            'immersiveengineering:plate_aluminum',
-            'thermal:tin_plate'
-        );
-
-        // remove alu related blocks
-        event.remove({id: 'immersiveengineering:crafting/alu_wallmount'});
-        event.remove({id: 'immersiveengineering:crafting/alu_scaffolding_standard'});
-        event.remove({id: 'immersiveengineering:crafting/alu_fence'});
     
     // electricity crafting changes
         

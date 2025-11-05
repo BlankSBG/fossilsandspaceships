@@ -72,6 +72,8 @@ version = 1
 	#How long it takes for the Anubite to respawn, in ticks
 	#Range: 1200 ~ 1000000000
 	anubiteCooldown = 72000
+	#True if Ceratosaurus should be feathered
+	featheredCerato = false
 
 ["Machine Config"]
 	#Percentage chance that the Culture Vat will break

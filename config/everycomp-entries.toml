@@ -61,12 +61,23 @@
 			mining = true
 			sorting = true
 
+		[types.wood_type.ars_nouveau]
+			archwood = true
+
+		[types.wood_type.valhelsia_structures]
+			lapidified_jungle = true
+
 	[types.cake]
 
 		[types.cake.compatdelight]
 			bamboo_cake = true
 			mana_cake = true
 			suns_cake = true
+			bastion_cake = true
+			bombegranate_cake = true
+			frostaya_cake = true
+			mendosteen_cake = true
+			source_berry_cake = true
 
 	[types.leaves_type]
 
@@ -202,6 +213,12 @@
 
 		[types.leaves_type.twilightdelight]
 			ironwood = true
+
+		[types.leaves_type.ars_nouveau]
+			blue_archwood = true
+			red_archwood = true
+			purple_archwood = true
+			green_archwood = true
 
 #Disables specific entries
 [entries]
@@ -539,6 +556,22 @@
 			banister = true
 			hollow_log_horizontal = true
 			hollow_log_vertical = true
+
+		[entries.wood_type.valhelsia_structures]
+			post = true
+			bundled_stripped_posts = true
+			cut_stripped_post = true
+			stripped_post = true
+			bundled_posts = true
+			cut_post = true
+
+		[entries.wood_type.valhelsia_furniture]
+			hay_chair = true
+			desk = true
+			chair = true
+			table = true
+			desk_drawer = true
+			stool = true
 
 	[entries.leaves_type]
 
